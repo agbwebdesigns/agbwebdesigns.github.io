@@ -3,11 +3,13 @@ html {
 }
 
 nav {
+  display: flex;
   background-color: lightblue;
 }
 
 main {
   display: flex;
+  flex-direction: column;
 }
 
 section {
