@@ -1,3 +1,15 @@
 html {
   font-size: 62.5%;
 }
+
+nav {
+  background-color: lightblue;
+}
+
+main {
+  display: flex;
+}
+
+section {
+  background-color: lightblue;
+}
