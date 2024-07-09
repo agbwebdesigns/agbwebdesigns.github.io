@@ -5,6 +5,13 @@ html {
 nav ul {
   display: flex;
   background-color: lightblue;
+  padding: 10px;
+}
+
+nav ul li {
+  font-size: 2rem;
+  padding: 5px;
+  margin: 5px;
 }
 
 main {
