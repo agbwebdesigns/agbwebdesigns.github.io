@@ -2,7 +2,7 @@ html {
   font-size: 62.5%;
 }
 
-nav {
+nav ul {
   display: flex;
   background-color: lightblue;
 }
