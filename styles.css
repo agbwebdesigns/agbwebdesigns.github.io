@@ -52,6 +52,11 @@ nav ul li {
   margin: 20px 0;
 }
 
+#left-column ul li {
+  font-size: 2rem;
+  margin: 5px;
+}
+
 .skill-images {
   display: flex;
 }
@@ -60,6 +65,10 @@ nav ul li {
   width: 30%;
   border: thin solid white;
   border-radius: 0;
+}
+
+#skill-images :first-child {
+  width: 100%;
 }
 
 #right-column {
@@ -75,8 +84,18 @@ nav ul li {
   color: rgb(77, 93, 185);
 }
 
+#opening-para h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
 #opening-para h2 {
   color: black;
+  margin-top: 0;
+}
+
+#spacer-1 {
+  padding: 5px;
 }
 
 #right-column p {
@@ -106,4 +125,21 @@ section h3 {
 
 #volunteer-section img {
   width: 90%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer div img {
+  width: 50px;
+}
+
+#footer-icons {
+  background-color: white;
+  padding: 10px;
+  border: thin solid white;
+  border-radius: 20px;
 }
