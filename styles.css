@@ -1,8 +1,11 @@
 html {
   font-size: 62.5%;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
   color: antiquewhite;
-  background-color: black;
+  background: black;
 }
 
 body h1 {

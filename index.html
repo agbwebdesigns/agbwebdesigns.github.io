@@ -57,7 +57,7 @@
           </h2>
           <div id="spacer-1"></div>
           <p>
-            For the past three years, I have been working as a self-taught
+            For the past four years, I have been working as a self-taught
             freelance web developer, specializing in JavaScript and JavaScript
             libraries such as jQuery, Express.js, React.js, and Node.js.
             Creating responsive, high-performance web applications with the MERN
@@ -70,33 +70,133 @@
         <div>
           <a id="workhistory"></a>
           <h1>Work History</h1>
-          <section id="lovesetmatch">
-            <h2>LoveSetMatch (Non-Profit)</h2>
-            <h3>Website Development (Volunteer)</h3>
+          <section id="aiscanner">
+            <h2>Distributed AI document scanner/analyzer</h2>
+            <h3>Fullstack Developer</h3>
+            <p><b>Time-Frame:</b> 3 weeks, July. 2025</p>
+            <p>
+              <b>Skills/Tools Used:</b>Express.js, Node.js, Sharp, Multer,
+              pdf-parser, pdflib, Poppler, Docker, OCR.space, Weaviate vectorDB,
+              OpenAI models: [text-embedding-3-small, gpt-4o, o4-mini]
+            </p>
+            <label for="aisdesc">Description:</label>
+            <p id="aisdesc">
+              This Distributed AI document scanner is an attempt to improve the
+              efficiency of AI scanning tools and AI response accuracy.
+              <br />
+              Presently, there is only so much context a single AI instance can
+              intake and accurately analyze before it starts hallucinating and
+              making things up.
+              <br />
+              This AI agent is an attempt to process larger documents with more
+              accuracy by breaking the document into more manageable pieces.
+              Those pieces can be fed to their own AI instance to be analyzed
+              individually, thereby distributing the workload to many AI.
+              <br />
+              A multiple page pdf document is uploaded and each page is parsed
+              out and OCR scanned to extract the text of the page. That page
+              text is sent to it's own AI instance to be analyzed and a
+              structured response returned. I chose the OpenAI model gpt-4o for
+              this task because it was recommended over gpt-3.5-turbo. My
+              thought was always to chose a cheap model for this task.
+              <br />
+              A vector array is created of the original page text, which is then
+              saved to the vectorDB along with the structured response. OpenAI
+              model text-embedding-3-small is used for this task.
+              <br />
+              I chose text-embedding-3-small because is creates 1536 dimensions
+              by default when creating a vector and Weaviate can be set to
+              expect 1536 dimensions when setting up a new collection.
+              <br />
+              A user can now perform RAG queries on the document using the more
+              advanced OpenAI model o4-mini.
+            </p>
+          </section>
+          <section id="wp-brevo-plugin">
+            <h2>WordPress Plugin</h2>
+            <h3>Fullstack Developer</h3>
+            <p><b>Time-Frame:</b>2 weeks - April 2025, 2 weeks - May 2025</p>
+            <p>
+              <b>Skills/Tools Used:</b>React.js, PHP, debugging skills, Chrome
+              dev tools, Chatgpt
+            </p>
+            <label for="wpbpdesc">Description:</label>
+            <p id="wpbpdesc">
+              I wanted to setup automated lead generation on my website, but I
+              could only find paid plugins that would connect a form to my Brevo
+              account. So I built my own instead.
+              <br />
+              I created React forms that can be chosen with a case/switch
+              statement. The plugin's setup page is where the Brevo API key can
+              be saved to the WordPress database.
+              <br />
+              Multiple forms can also be set up here. The desired form can be
+              chosen as well as which Brevo list the contact data will be saved
+              to and the CTA on the submit button can be whatever the user
+              wants. A short-code is created for the form instance so it can be
+              implemented on any page.
+            </p>
+          </section>
+          <section id="snagashift">
+            <h2>Snag-a-Shift</h2>
+            <h3>Founder/CEO, Fullstack Developer</h3>
             <p><b>Time-Frame:</b>Oct. 2023 - Present</p>
             <p>
-              <b>Skills/Tools Used:</b>WordPress, Elementor, Astra theme, Yoast
-              for SEO, Figma
+              <b>Skills/Tools Used:</b>MongoDB, Express.js, React.js, Node.js,
+              Mongoose, Stripe, Google PlaceId API, Google Distance Matrix API,
+              Firebase Cloud Messaging, JWT, CORS, Helmet.js, debugging skills,
+              Chrome Devtools.
             </p>
-            <label for="lsmdesc">Description:</label>
-            <p id="lsmdesc">
-              I was the main developer, creating the website based on the Figma
-              document that LoveSetMatch provided to me. I have continued to
-              provide develpoment support and expertise to the ongoing
-              development of the website.
+            <label for="sasdesc">Description:</label>
+            <p id="sasdesc">
+              I developed a comprehensive marketing platform for the restaurant
+              industry, from concept to beta launch. Conducted market research
+              and developed a business plan to attract the first users and
+              customers. I developed a calculator that reveals the hidden costs
+              of turnover in lost productivity, and I wrote a white paper
+              explaining my findings, including a new perspective on the
+              relationship between wages and labor. Snag-a-Shift launched in May
+              2025 and is located at snag-a-shift.app.
             </p>
           </section>
           <section id="yellowrosestudios">
             <h2>Yellow Rose Studios</h2>
             <h3>Website Design and Development with Email Marketing</h3>
             <p><b>Time-Frame:</b>Feb. 2023 - Present</p>
-            <p><b>Skills/Tools Used:</b>WiX, Canva</p>
+            <p>
+              <b>Skills/Tools Used:</b>WiX, Canva, Email Marketing, Front-End
+              Development
+            </p>
             <label for="yrsdesc">Description:</label>
             <p id="yrsdesc">
-              I am the developer for the website. I redesigned the website and
-              continue to add updates and new features as the business requires.
-              I also design and develop marketing emails for Yellow Rose Studios
-              to send to clients.
+              I am the developer for the website, which is built using the WiX
+              platform. When I first started working on the Yellow Rose Studios
+              website, I began by redesigning it to its current state with
+              defined sections of the main page. I designed each section to be
+              unique and paid special attention to choosing varying font types
+              and sizes to aid each section's design. I continue to add updates
+              and new features as the business requires. I also use the same
+              principles to design and develop marketing emails for Yellow Rose
+              Studios to send to clients. Located at yellowrosestudios.com.
+            </p>
+          </section>
+          <section id="lovesetmatch">
+            <h2>LoveSetMatch</h2>
+            <h3>Website Development</h3>
+            <p><b>Time-Frame:</b>Oct. 2023 - July 2024</p>
+            <p>
+              <b>Skills/Tools Used:</b>WordPress, Elementor, Astra theme, Yoast
+              for SEO, Figma
+            </p>
+            <label for="lsmdesc">Description:</label>
+            <p id="lsmdesc">
+              I had the pleasure of getting matched with Phillip through
+              CatchaFire.org to develop the LoveSetMatch.org website. I created
+              the website using WordPress with Elementor and the Astra theme. I
+              also used Yoast to set up SEO for the website. All of this was
+              based on the Figma document that LoveSetMatch provided to me. I
+              have continued to provide development support and expertise to
+              LoveSetMatch. Located at lovesetmatch.org.
             </p>
           </section>
           <section id="pulloutshelf">
@@ -105,40 +205,41 @@
             <p><b>Time-Frame:</b>June 2023 - July 2023</p>
             <p>
               <b>Skills/Tools Used:</b>WordPress, Elementor, Astra theme, Yoast
-              Plugin for SEO
+              for SEO
             </p>
             <label for="posdesc">Description:</label>
             <p id="posdesc">
-              I designed and developed the core and main pages of the website
-              using WordPress and Elementor. The site has since been developed
-              further.
+              I developed the website for the Pullout Shelf Company using
+              WordPress with Elementor and the Astra theme. I designed the
+              website, making sure to show off key features of their build
+              process and before-and-after images provided by the owner.
             </p>
           </section>
           <section id="rockstarsms">
             <h2>RockStarSMS</h2>
             <h3>CSS Design Development</h3>
             <p><b>Time-Frame:</b>Oct. 2022 - Nov. 2022</p>
-            <p>
-              <b>Skills/Tools Used:</b>CSS, Firefox developer tools, VS Code
-            </p>
+            <p><b>Skills/Tools Used:</b>CSS, Chrome developer tools, VS Code</p>
             <label for="rssdesc">Description:</label>
             <p id="rssdesc">
-              I redesigned a dashboard theme for the website to a more modern
-              look by editing the CSS of the dashboard. Using Firefox developer
-              tools and VS Code I found all of the CSS files that needed to be
-              edited and modified them to the new updated look.
+              I redesigned the dashboard theme for the RockstarSMS website to a
+              more modern look by editing its CSS files. The dashboard is
+              accessed by subscribers once they log in. I used Firefox developer
+              tools to locate the .css files I needed to edit and VS Code as my
+              editor to make the changes.
             </p>
           </section>
           <section id="dreamingofachance">
-            <h2>Dreaming of a Chance (Non-Profit)</h2>
-            <h3>SEO Website Audit (Volunteer)</h3>
+            <h2>Dreaming of a Chance</h2>
+            <h3>SEO Website Audit</h3>
             <p><b>Time-Frame:</b>June 2022</p>
             <p><b>Skills/Tools Used:</b>SemRush</p>
             <label for="docdesc">Description:</label>
             <p id="docdesc">
-              I had the pleasure of helping Tiffany and her non-profit bird
-              sanctuary by analysing how optimized her website was for search
-              engines. Using Semrush I analysed her website and created an SEO
+              I had the pleasure of getting matched with Tiffany through
+              CatchaFire.org to assist her non-profit bird sanctuary with their
+              SEO needs. Using Semrush, I analysed her website for improvements
+              that could be made to improve her SERP position and created an SEO
               report to detail the findings.
             </p>
           </section>
