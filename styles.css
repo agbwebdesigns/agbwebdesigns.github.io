@@ -27,6 +27,8 @@ nav ul {
   justify-content: flex-end;
   background-color: rgb(255, 255, 255);
   padding: 10px;
+  border: thin solid silver;
+  border-radius: 20px;
 }
 
 nav ul li {
