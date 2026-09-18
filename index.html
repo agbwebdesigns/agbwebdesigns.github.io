@@ -21,10 +21,17 @@
     <main>
       <div id="left-column">
         <img src="./images/Adam Bennett.jpg" alt="Adam Bennett Headshot" />
-        <h1>Adam G Bennett</h1>
-        <p>Tucson, AZ</p>
+        <div class="name-location">
+          <h1>Adam G Bennett</h1>
+          <p>Tucson, AZ</p>
+        </div>
         <hr align="center" width="300" />
         <div id="skill-images">
+          <img 
+            src="./images/new-stack.png"
+            alt="TypeScript, Node.js, Python, FastAPI, Prisma, PostgreSQL"
+            title="TypeScript, Node.js, Python, FastAPI, Prisma, PostgreSQL"
+          />
           <img
             src="./images/mern stack icon.png"
             alt="MongoDB, Express.js, React.js, Node.js"
@@ -64,6 +71,9 @@
         <div>
           <h3>Back-End Development</h3>
           <ul>
+            <li>Python</li>
+            <li>FastAPI</li>
+            <li>TypeScript</li>
             <li>Node.js</li>
             <li>Express.js</li>
             <li>REST API Design</li>
@@ -77,6 +87,7 @@
           <h3>Databases</h3>
           <ul>
             <li>MongoDB Atlas</li>
+            <li>Mongoose</li>
             <li>PostgreSQL</li>
             <li>Prisma ORM</li>
             <li>Amazon DocumentDB</li>
@@ -145,6 +156,7 @@
             <li>Prettier</li>
             <li>TypeScript Type Safety</li>
             <li>API Testing (Postman)</li>
+            <li>Github Actions</li>
           </ul>
         </div>
         <div>
@@ -692,5 +704,27 @@
       <p>&copy; 2026 Adam Bennett. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <button id="backToTop" aria-label="Back to top" title="Back to top">
+  ↑
+    </button>
+
+    <script>
+      const backToTopButton = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 400) {
+          backToTopButton.classList.add("visible");
+        } else {
+          backToTopButton.classList.remove("visible");
+        }
+      });
+
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
   </body>
 </html>
